@@ -1,0 +1,28 @@
+<div class="App">
+  <section class="background--green">
+    <h1>Angular + Web Components</h1>
+  </section>
+
+  <section class="background--white">
+    <h3>Web component Input</h3>
+    <input-field
+      label="Input in Angular"
+      [value]="message"
+      (input)="message = $event.target.value"
+    ></input-field>
+  </section>
+
+  <section class="background--champagne">
+    <h3>Default HTML Input</h3>
+    <input
+      type="text"
+      [value]="message"
+      (input)="message = $event.target.value"
+    />
+  </section>
+  <section class="background--blue">
+    <p>
+      Message: <strong>{{ message }}</strong>
+    </p>
+  </section>
+</div>
