@@ -8,5 +8,9 @@ import "hv-input-field";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-  message = "Angular Example";
+  JSON: any = JSON;
+  form = {
+    firstName: "Angular",
+    lastName: "Example"
+  };
 }

@@ -6,9 +6,14 @@
   <section class="background--white">
     <h3>Web component Input</h3>
     <input-field
-      label="Input in Angular"
-      [value]="message"
-      (input)="message = $event.target.value"
+      label="First name"
+      [value]="form.firstName"
+      (input)="form.firstName = $event.target.value"
+    ></input-field>
+    <input-field
+      label="Last name"
+      [value]="form.lastName"
+      (input)="form.lastName = $event.target.value"
     ></input-field>
   </section>
 
@@ -16,13 +21,18 @@
     <h3>Default HTML Input</h3>
     <input
       type="text"
-      [value]="message"
-      (input)="message = $event.target.value"
+      [value]="form.firstName"
+      (input)="form.firstName = $event.target.value"
+    />
+    <input
+      type="text"
+      [value]="form.lastName"
+      (input)="form.lastName = $event.target.value"
     />
   </section>
   <section class="background--blue">
-    <p>
-      Message: <strong>{{ message }}</strong>
-    </p>
+    <strong
+      ><pre>{{ JSON.stringify(form) }}</pre></strong
+    >
   </section>
 </div>
