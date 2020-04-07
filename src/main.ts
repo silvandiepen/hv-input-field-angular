@@ -4,7 +4,7 @@ import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 import { AppModule } from "./app/app.module";
 import { environment } from "./environments/environment";
 
-import { applyPolyfills, defineCustomElements } from "hv-input-field/loader";
+import { applyPolyfills, defineCustomElements } from "hv-styleguide/loader";
 
 applyPolyfills().then(() => {
   defineCustomElements(window);

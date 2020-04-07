@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 
-import "hv-input-field";
+import "hv-styleguide";
 
 @Component({
   selector: "app-root",
